@@ -1,0 +1,45 @@
+// Variables Import
+@import "./variable";
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+// Body
+body {
+  background-color: $bg-color;
+  overflow-x: hidden;
+}
+
+// Header Style Import
+@import "./header";
+
+// Landing Style Import
+@import "./landing";
+
+.square {
+  width: 200px;
+  height: 200px;
+
+  position: fixed;
+  opacity: 0.05;
+
+  border: 2px solid $primary-color;
+
+  background-color: transparent;
+}
+
+.top {
+  right: -100px;
+  top: 150px;
+  transform: rotate(-30deg);
+}
+.bottom {
+  left: -100px;
+  bottom: 0;
+  transform: rotate(30deg);
+}
