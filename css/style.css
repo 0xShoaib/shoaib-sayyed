@@ -29,7 +29,7 @@ label .menu {
   z-index: 100;
   width: 160px;
   height: 160px;
-  background: transparent;
+  background: #101010;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -128,8 +128,7 @@ label a {
 
 .landing {
   width: 100%;
-  height: 88vh;
-  margin-top: 12vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,6 +327,7 @@ label a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 10vh;
 }
 
 .section-heading h1 {
@@ -346,32 +346,23 @@ label a {
 
 #about {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 #about .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5%;
-}
-
-#about .content .image {
-  width: 40%;
-}
-
-#about .content .image img {
-  width: 80%;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-  border-radius: 10px;
 }
 
 #about .content .text {
@@ -381,22 +372,47 @@ label a {
   letter-spacing: 2px;
   line-height: 2;
   font-weight: 100;
+  padding: 20px;
+}
+
+#about .content .btn {
+  margin-top: 20px;
+}
+
+#about .content .btn a {
+  text-decoration: none;
+  color: #e6f1ff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #e6f1ff;
+}
+
+#about .content .btn a:hover {
+  border: 1px solid #faff00;
+  color: #faff00;
 }
 
 @media screen and (max-width: 768px) {
-  #about .content .image {
-    width: 40%;
-  }
-  #about .content .image img {
-    width: 80%;
-    -webkit-filter: grayscale(80%);
-            filter: grayscale(80%);
-    border-radius: 10px;
+  #about {
+    margin-top: 100px;
   }
   #about .content .text {
     width: 60%;
     font-size: 16px;
     letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  #about {
+    margin-top: 100px;
+  }
+  #about .content .text {
+    width: 80%;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
