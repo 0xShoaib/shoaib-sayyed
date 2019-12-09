@@ -327,7 +327,6 @@ label a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 10vh;
 }
 
 .section-heading h1 {
@@ -344,9 +343,28 @@ label a {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 425px) {
+  .section-heading h1 {
+    font-size: 40px;
+  }
+}
+
 #about {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #about .content {
@@ -362,17 +380,19 @@ label a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5%;
+  margin-top: 10px;
 }
 
 #about .content .text {
-  width: 50%;
+  width: 80%;
   color: rgba(230, 241, 255, 0.3);
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 2;
   font-weight: 100;
   padding: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #about .content .btn {
@@ -385,6 +405,7 @@ label a {
   font-size: 18px;
   letter-spacing: 2px;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border: 1px solid #e6f1ff;
@@ -395,24 +416,11 @@ label a {
   color: #faff00;
 }
 
-@media screen and (max-width: 768px) {
-  #about {
-    margin-top: 100px;
-  }
+@media screen and (max-width: 425px) {
   #about .content .text {
-    width: 60%;
+    width: 90%;
     font-size: 16px;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 626px) {
-  #about {
-    margin-top: 100px;
-  }
-  #about .content .text {
-    width: 80%;
-    margin-top: 20px;
+    padding: 20px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

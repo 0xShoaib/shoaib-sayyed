@@ -55,8 +55,6 @@ body {
   align-items: center;
   flex-direction: column;
 
-  margin-top: 10vh;
-
   h1 {
     font-size: 64px;
     color: $secondary-color;
@@ -70,6 +68,12 @@ body {
     letter-spacing: 2px;
   }
 }
-
+@media screen and (max-width: 425px) {
+  .section-heading {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
 // About Section Style
 @import "./about";
