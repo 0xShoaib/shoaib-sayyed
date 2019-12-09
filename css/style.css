@@ -15,6 +15,16 @@ body {
   overflow-x: hidden;
 }
 
+::-moz-selection {
+  color: #faff00;
+  background: #fff;
+}
+
+::selection {
+  color: #faff00;
+  background: #fff;
+}
+
 .logo {
   position: fixed;
   top: 10px;
@@ -122,8 +132,15 @@ label a {
   margin-bottom: 1em;
   display: block;
   color: #000;
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+label a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .landing {
@@ -146,8 +163,12 @@ label a {
 
 .landing p {
   font-size: 22px;
-  color: #e6f1ff;
+  color: #fff;
   letter-spacing: 2px;
+}
+
+.landing p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
 }
 
 .landing #name {
@@ -331,7 +352,7 @@ label a {
 
 .section-heading h1 {
   font-size: 64px;
-  color: #e6f1ff;
+  color: #fff;
   letter-spacing: 4px;
 }
 
@@ -402,14 +423,14 @@ label a {
 
 #about .content .btn a {
   text-decoration: none;
-  color: #e6f1ff;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 2px;
   padding: 10px;
   font-family: "Poppins", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border: 1px solid #e6f1ff;
+  border: 1px solid #fff;
 }
 
 #about .content .btn a:hover {

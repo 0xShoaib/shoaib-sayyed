@@ -14,6 +14,9 @@
     color: $secondary-color;
     letter-spacing: 2px;
   }
+  p:nth-child(2) {
+    font-family: "Poppins", sans-serif;
+  }
   #name {
     margin: 20px 0px;
     animation: fill 0.5s ease forwards 3s;
