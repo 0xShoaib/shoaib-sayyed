@@ -1,0 +1,64 @@
+// Variables Import
+@import "./variable";
+
+#skills {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .content {
+    margin-top: 20px;
+    .skills {
+      list-style: none;
+      font-size: 20px;
+      color: $text-color;
+
+      li {
+        margin-bottom: 10px;
+        font-family: "Poppins", sans-serif;
+        i {
+          margin-right: 20px;
+          font-size: 30px;
+        }
+
+        #js {
+          color: rgb(232, 212, 77);
+        }
+        #react {
+          color: #61dbfb;
+        }
+        #redux {
+          color: #764abc;
+        }
+        #html {
+          color: #f16529;
+        }
+        #css {
+          color: #264de4;
+        }
+        #ui {
+          color: red;
+        }
+        #figma {
+          color: #0acf83;
+        }
+        #git {
+          color: white;
+        }
+        #gem {
+          color: white;
+        }
+      }
+    }
+  }
+  #em-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -66,6 +66,7 @@ body {
     font-size: 20px;
     color: $text-color;
     letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
   }
 }
 @media screen and (max-width: 425px) {
@@ -77,3 +78,6 @@ body {
 }
 // About Section Style
 @import "./about";
+
+//Skills Section Style
+@import "./skills";
