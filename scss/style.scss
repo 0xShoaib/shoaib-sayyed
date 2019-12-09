@@ -8,6 +8,10 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+//Html
+html {
+  scroll-behavior: smooth;
+}
 
 // Body
 body {
@@ -43,3 +47,27 @@ body {
   bottom: 0;
   transform: rotate(30deg);
 }
+
+// Section heading
+.section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 64px;
+    color: $secondary-color;
+    letter-spacing: 4px;
+  }
+  p {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+    color: $text-color;
+    letter-spacing: 2px;
+  }
+}
+
+// About Section Style
+@import "./about";
