@@ -37,9 +37,9 @@ label .menu {
   right: -100px;
   top: -100px;
   z-index: 100;
-  width: 160px;
-  height: 160px;
-  background: #101010;
+  width: 180px;
+  height: 180px;
+  background: #faff00;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -51,10 +51,10 @@ label .menu {
 label .hamburger {
   position: absolute;
   top: 130px;
-  left: 15px;
+  left: 33px;
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: #000;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -71,7 +71,7 @@ label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #000;
 }
 
 label .hamburger:before {
@@ -91,11 +91,15 @@ label input:checked + .menu {
           box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
   border-radius: 0;
   position: fixed;
+  width: 160px;
+  height: 160px;
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  top: 130px;
+  left: 15px;
 }
 
 label input:checked + .menu .hamburger:after {
@@ -505,6 +509,10 @@ label a:hover {
   color: #264de4;
 }
 
+#skills .content .skills li #sass {
+  color: #cd6799;
+}
+
 #skills .content .skills li #ui {
   color: red;
 }
@@ -525,5 +533,276 @@ label a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+#project {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+#project .container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#project .container .card {
+  width: 600px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#project .container .card .imgBox {
+  width: 100%;
+}
+
+#project .container .card .imgBox img {
+  width: 100%;
+}
+
+#project .container .card .details {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+#project .container .card .details p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+
+#project .container .card .details p:nth-of-type(2) {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+#project .container .card .details ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project .container .card .details ul li a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#project .container .card .details ul li a:hover {
+  color: #faff00;
+}
+
+#project .container .card:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#project .btn {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#project .btn:hover {
+  color: #faff00;
+  border: 1px solid #faff00;
+}
+
+@media screen and (max-width: 625px) {
+  #project .container .card {
+    width: 400px;
+  }
+  #project .container .card .details p {
+    font-size: 18px;
+  }
+  #project .container .card .details ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #project .container .card .details ul li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #project .container .card {
+    width: 300px;
+  }
+  #project .container .card .details p {
+    font-size: 18px;
+  }
+  #project .container .card .details ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #project .container .card .details ul li a {
+    font-size: 20px;
+  }
+}
+
+#contact {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .container p {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+#contact .container ul {
+  margin-top: 30px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .container ul li i {
+  color: #fff;
+  font-size: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#contact .container ul li i:hover {
+  color: #faff00;
+}
+
+@media screen and (max-width: 425px) {
+  #contact .container p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #contact .container p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .text {
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+footer .text span {
+  color: #faff00;
+}
+
+footer .copy {
+  color: rgba(230, 241, 255, 0.3);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  footer .text {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

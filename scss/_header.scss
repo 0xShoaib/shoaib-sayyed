@@ -12,9 +12,9 @@ label .menu {
   right: -100px;
   top: -100px;
   z-index: 100;
-  width: 160px;
-  height: 160px;
-  background: $bg-color;
+  width: 180px;
+  height: 180px;
+  background: $primary-color;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -25,10 +25,10 @@ label .menu {
 label .hamburger {
   position: absolute;
   top: 130px;
-  left: 15px;
+  left: 33px;
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: #000;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -45,7 +45,7 @@ label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #000;
 }
 
 label .hamburger:before {
@@ -65,11 +65,17 @@ label input:checked + .menu {
   border-radius: 0;
 
   position: fixed;
+
+  width: 160px;
+  height: 160px;
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+
+  top: 130px;
+  left: 15px;
 }
 
 label input:checked + .menu .hamburger:after {

@@ -1,0 +1,159 @@
+@import "./variable";
+
+#project {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 50px;
+
+  .container {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .card {
+      width: 600px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+      margin: 20px;
+
+      filter: grayscale(100%);
+      transition: all 0.2s ease-in-out;
+
+      .imgBox {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .details {
+        color: $secondary-color;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 20px 0;
+
+        p {
+          font-size: 24px;
+          letter-spacing: 2px;
+          font-style: normal;
+        }
+
+        p:nth-of-type(2) {
+          margin-top: 10px;
+          font-size: 16px;
+          font-family: "Poppins", sans-serif;
+          letter-spacing: 2px;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          li {
+            a {
+              font-size: 24px;
+              margin: 0 10px;
+
+              color: $secondary-color;
+              text-decoration: none;
+
+              transition: all 0.2s ease-in-out;
+
+              cursor: pointer;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+  .btn {
+    display: block;
+
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid $secondary-color;
+
+    text-decoration: none;
+    color: $secondary-color;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #project {
+    .container {
+      .card {
+        width: 400px;
+
+        .details {
+          p {
+            font-size: 18px;
+          }
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+              a {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 625px) {
+  #project {
+    .container {
+      .card {
+        width: 300px;
+
+        .details {
+          p {
+            font-size: 18px;
+          }
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+              a {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

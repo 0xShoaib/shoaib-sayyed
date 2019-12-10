@@ -85,3 +85,45 @@ body {
 
 //Skills Section Style
 @import "./skills";
+
+//Project Section Style
+@import "./project";
+
+//Project Section Style
+@import "./contact";
+
+footer {
+  width: 100%;
+  height: 10vh;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .text {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: $secondary-color;
+
+    span {
+      color: $primary-color;
+    }
+  }
+  .copy {
+    color: $text-color;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    .text {
+      font-size: 18px;
+    }
+  }
+}
