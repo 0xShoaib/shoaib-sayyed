@@ -27,18 +27,18 @@ body {
 
 .logo {
   position: fixed;
-  top: 10px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   z-index: 100;
 }
 
 label .menu {
   position: fixed;
-  right: -100px;
-  top: -100px;
+  right: 15px;
+  top: 15px;
   z-index: 100;
-  width: 180px;
-  height: 180px;
+  width: 60px;
+  height: 60px;
   background: #faff00;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
@@ -50,8 +50,8 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 130px;
-  left: 33px;
+  top: 30px;
+  left: 15px;
   width: 30px;
   height: 2px;
   background: #000;
@@ -91,15 +91,13 @@ label input:checked + .menu {
           box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
   border-radius: 0;
   position: fixed;
-  width: 160px;
-  height: 160px;
+  width: 60px;
+  height: 60px;
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 130px;
-  left: 15px;
 }
 
 label input:checked + .menu .hamburger:after {
@@ -127,8 +125,8 @@ label ul {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
+  -webkit-transition: 0.5s 0s ease-in-out;
+  transition: 0.5s 0s ease-in-out;
   list-style: none;
 }
 
@@ -238,22 +236,22 @@ label a:hover {
 }
 
 .landing #name path:nth-child(9) {
-  stroke-dasharray: 216px;
-  stroke-dashoffset: 216px;
+  stroke-dasharray: 217px;
+  stroke-dashoffset: 217px;
   -webkit-animation: line-anime 2s ease forwards 1.6s;
           animation: line-anime 2s ease forwards 1.6s;
 }
 
 .landing #name path:nth-child(10) {
-  stroke-dasharray: 216px;
-  stroke-dashoffset: 216px;
+  stroke-dasharray: 217px;
+  stroke-dashoffset: 217px;
   -webkit-animation: line-anime 2s ease forwards 1.8s;
           animation: line-anime 2s ease forwards 1.8s;
 }
 
 .landing #name path:nth-child(11) {
-  stroke-dasharray: 314px;
-  stroke-dashoffset: 314px;
+  stroke-dasharray: 315px;
+  stroke-dashoffset: 315px;
   -webkit-animation: line-anime 2s ease forwards 2s;
           animation: line-anime 2s ease forwards 2s;
 }

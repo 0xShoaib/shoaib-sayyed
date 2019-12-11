@@ -23,6 +23,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
 
+    <!-- AOS Library  -------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Stylesheet  -------------------------------------------------->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -35,6 +38,10 @@
         viewBox="0 0 49 45"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
       >
         <path
           d="M1.5 10C1.5 5.30558 5.30558 1.5 10 1.5H39C43.6944 1.5 47.5 5.30558 47.5 10V35C47.5 39.6944 43.6944 43.5 39 43.5H10C5.30558 43.5 1.5 39.6944 1.5 35V10Z"
@@ -50,7 +57,12 @@
     <!-- /Logo SVG -------------------------------------------------->
 
     <!-- Menu  -------------------------------------------------->
-    <label>
+    <label
+      data-aos="zoom-in"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
+    >
       <input type="checkbox" />
       <span class="menu"> <span class="hamburger"></span> </span>
       <ul>
@@ -66,7 +78,13 @@
     <!-- Landing section  -------------------------------------------------->
     <section class="landing" id="home">
       <div class="square top"></div>
-      <p>GOOD EVENING! I'M</p>
+      <p
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
+        GOOD EVENING! I'M
+      </p>
       <svg
         id="name"
         width="671"
@@ -149,7 +167,13 @@
         />
       </svg>
 
-      <p>A FRONT-END DEVELOPER</p>
+      <p
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
+        A FRONT-END DEVELOPER
+      </p>
       <div class="square bottom"></div>
     </section>
     <!-- /Landing Section  -------------------------------------------------->
@@ -157,17 +181,43 @@
     <!-- About us Section  -------------------------------------------------->
     <section id="about">
       <div class="section-heading">
-        <h1>About</h1>
-        <p>my background...</p>
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          About
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          my background...
+        </p>
       </div>
       <div class="content">
-        <div class="text">
+        <div
+          class="text"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-sine"
+        >
           I'm Front-End Developer who loves to create beautiful design and
           experinces. Although I'm a Final Year student of Computer Application
           and I love to learn and play around with different technologies in
           order to create amazing products.
         </div>
-        <div class="btn">
+        <div
+          class="btn"
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
           <a
             href="https://drive.google.com/uc?export=download&id=1iCKK5VEbwnZ93BP3JOjCW2Zm_b-gUprN"
             >Download Resume</a
@@ -180,29 +230,119 @@
     <!-- Skills Section  -------------------------------------------------->
     <section id="skills">
       <div class="section-heading">
-        <h1>Skills</h1>
-        <p>my skills...</p>
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Skills
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          my skills...
+        </p>
       </div>
       <div class="content">
         <ul class="skills">
-          <li><i id="js" class="fab fa-js"></i>JavaScript & ES6</li>
-          <li>
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="js" class="fab fa-js"></i>JavaScript & ES6
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
             <i id="react" class="fab fa-react"></i>React JS & React Router
           </li>
-          <li><i id="redux" class="fas fa-atom"></i>Redux & React Redux</li>
-          <li><i id="html" class="fab fa-html5"></i>HTML</li>
-          <li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="redux" class="fas fa-atom"></i>Redux & React Redux
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="html" class="fab fa-html5"></i>HTML
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
             <i id="css" class="fab fa-css3-alt"></i>CSS-Animation,Flexbox,Grid
           </li>
-          <li><i id="sass" class="fab fa-sass"></i>SASS Pre-Processor</li>
-          <li><i id="git" class="fab fa-github"></i>Git & GitHub</li>
-          <li><i id="ui" class="fas fa-pencil-alt"></i>UI Design</li>
-          <li><i id="figma" class="fab fa-figma"></i>Figma</li>
-          <li><i id="gem" class="fas fa-gem"></i>And lots more...</li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="sass" class="fab fa-sass"></i>SASS Pre-Processor
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="git" class="fab fa-github"></i>Git & GitHub
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="ui" class="fas fa-pencil-alt"></i>UI Design
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="figma" class="fab fa-figma"></i>Figma
+          </li>
+
+          <li
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <i id="gem" class="fas fa-gem"></i>And lots more...
+          </li>
         </ul>
       </div>
       <svg
         id="em-text"
+        data-aos="fade"
         width="500"
         height="256"
         viewBox="0 0 500 256"
@@ -223,13 +363,31 @@
     <!-- Project Section  -------------------------------------------------->
     <section id="project">
       <div class="section-heading">
-        <h1>Projects</h1>
-        <p>some of my work...</p>
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Projects
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          some of my work...
+        </p>
       </div>
 
       <div class="container">
         <!-- Card One ------------------->
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="imgBox">
             <img src="./img/project-1.png" alt="Project Banner" />
           </div>
@@ -257,7 +415,11 @@
         </div>
 
         <!-- Card Two ------------------->
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="imgBox">
             <img src="./img/project-2.png" alt="Project Banner" />
           </div>
@@ -287,7 +449,11 @@
           </div>
         </div>
         <!-- Card Three ------------------->
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="imgBox">
             <img src="./img/project-3.png" alt="Project Banner" />
           </div>
@@ -314,7 +480,15 @@
             </ul>
           </div>
         </div>
-        <a class="btn" href="https://github.com/shoaib-03/" target="_blank">
+        <a
+          class="btn"
+          href="https://github.com/shoaib-03/"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-sine"
+        >
           View All Projects
         </a>
       </div>
@@ -324,23 +498,61 @@
     <!-- Contact Section  -------------------------------------------------->
     <section id="contact">
       <div class="section-heading">
-        <h1>Contact</h1>
-        <p>lets connect...</p>
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Contact
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine"
+        >
+          lets connect...
+        </p>
       </div>
       <div class="container">
-        <p>sayyedshoaib57@gmail.com</p>
+        <p
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-sine"
+        >
+          sayyedshoaib57@gmail.com
+        </p>
         <ul>
-          <li>
+          <li
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+          >
             <a href="https://github.com/shoaib-03/"
               ><i class="fab fa-github"></i
             ></a>
           </li>
-          <li>
+
+          <li
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+          >
             <a href="https://www.linkedin.com/in/shoaib-sayyed-522a92163/"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
-          <li>
+
+          <li
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+          >
             <a href="https://www.instagram.com/s.h.o.a.i.b_03/"
               ><i class="fab fa-instagram"></i
             ></a>
@@ -349,10 +561,30 @@
       </div>
     </section>
     <footer>
-      <p class="text">Designed by <span>Shoaib Sayyed</span></p>
-      <p class="copy">&copy Copyright - 2019</p>
+      <p
+        class="text"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-sine"
+      >
+        Designed by <span>Shoaib Sayyed</span>
+      </p>
+      <p
+        class="copy"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-sine"
+      >
+        &copy Copyright - 2019
+      </p>
     </footer>
 
     <script src="./js/header.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
