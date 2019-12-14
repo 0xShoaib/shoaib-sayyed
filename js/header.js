@@ -1,7 +1,7 @@
-let burger = document.getElementById("burger");
-let nav = document.getElementById("main-nav");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-burger.addEventListener("click", function(e) {
-  this.classList.toggle("is-open");
-  nav.classList.toggle("is-open");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+  navLinks.classList.toggle("active");
 });

@@ -34,7 +34,7 @@ body {
   height: 200px;
 
   position: fixed;
-  opacity: 0.05;
+  opacity: 0.1;
 
   border: 2px solid $primary-color;
 
@@ -61,7 +61,7 @@ body {
 
   h1 {
     font-size: 64px;
-    color: $secondary-color;
+    color: $primary-color;
     letter-spacing: 4px;
   }
   p {

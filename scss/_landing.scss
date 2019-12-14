@@ -11,12 +11,31 @@
 
   p {
     font-size: 22px;
-    color: $secondary-color;
+    color: $text-color;
     letter-spacing: 2px;
-  }
-  p:nth-child(2) {
+
     font-family: "Poppins", sans-serif;
   }
+  .btn {
+    margin-top: 60px;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding: 10px;
+      font-family: "Poppins", sans-serif;
+
+      transition: all 0.5s ease-in-out;
+      border: 1px solid $primary-color;
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+
   #name {
     margin: 20px 0px;
     animation: fill 0.5s ease forwards 3s;
@@ -24,62 +43,62 @@
   #name path:nth-child(1) {
     stroke-dasharray: 281px;
     stroke-dashoffset: 281px;
-    animation: line-anime 2s ease forwards;
+    animation: line-anime 1.5s ease forwards;
   }
   #name path:nth-child(2) {
     stroke-dasharray: 307px;
     stroke-dashoffset: 307px;
-    animation: line-anime 2s ease forwards 0.2s;
+    animation: line-anime 1.5s ease forwards 0.2s;
   }
   #name path:nth-child(3) {
     stroke-dasharray: 330px;
     stroke-dashoffset: 330px;
-    animation: line-anime 2s ease forwards 0.4s;
+    animation: line-anime 1.5s ease forwards 0.4s;
   }
   #name path:nth-child(4) {
     stroke-dasharray: 298px;
     stroke-dashoffset: 298px;
-    animation: line-anime 2s ease forwards 0.6s;
+    animation: line-anime 1.5s ease forwards 0.6s;
   }
   #name path:nth-child(5) {
     stroke-dasharray: 126px;
     stroke-dashoffset: 126px;
-    animation: line-anime 2s ease forwards 0.8s;
+    animation: line-anime 1.5s ease forwards 0.8s;
   }
   #name path:nth-child(6) {
     stroke-dasharray: 396px;
     stroke-dashoffset: 396px;
-    animation: line-anime 2s ease forwards 1s;
+    animation: line-anime 1.5s ease forwards 1s;
   }
   #name path:nth-child(7) {
     stroke-dasharray: 281px;
     stroke-dashoffset: 281px;
-    animation: line-anime 2s ease forwards 1.2s;
+    animation: line-anime 1.5s ease forwards 1.2s;
   }
   #name path:nth-child(8) {
     stroke-dasharray: 298px;
     stroke-dashoffset: 298px;
-    animation: line-anime 2s ease forwards 1.4s;
+    animation: line-anime 1.5s ease forwards 1.4s;
   }
   #name path:nth-child(9) {
     stroke-dasharray: 217px;
     stroke-dashoffset: 217px;
-    animation: line-anime 2s ease forwards 1.6s;
+    animation: line-anime 1.5s ease forwards 1.6s;
   }
   #name path:nth-child(10) {
     stroke-dasharray: 217px;
     stroke-dashoffset: 217px;
-    animation: line-anime 2s ease forwards 1.8s;
+    animation: line-anime 1.5s ease forwards 1.8s;
   }
   #name path:nth-child(11) {
     stroke-dasharray: 315px;
     stroke-dashoffset: 315px;
-    animation: line-anime 2s ease forwards 2s;
+    animation: line-anime 1.5s ease forwards 1.5s;
   }
   #name path:nth-child(12) {
     stroke-dasharray: 348px;
     stroke-dashoffset: 348px;
-    animation: line-anime 2s ease forwards 2.2s;
+    animation: line-anime 1.5s ease forwards 2.2s;
   }
 }
 

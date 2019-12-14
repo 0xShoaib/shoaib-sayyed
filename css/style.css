@@ -11,138 +11,192 @@ html {
 }
 
 body {
-  background-color: #101010;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
 ::-moz-selection {
-  color: #faff00;
+  color: crimson;
   background: #fff;
 }
 
 ::selection {
-  color: #faff00;
+  color: crimson;
   background: #fff;
 }
 
 .logo {
   position: fixed;
   top: 15px;
-  left: 15px;
+  left: 34px;
   z-index: 100;
 }
 
-label .menu {
+.nav {
+  position: relative;
+  z-index: 999;
+}
+
+.nav .hamburger {
   position: fixed;
-  right: 15px;
+  left: 34px;
   top: 15px;
-  z-index: 100;
-  width: 60px;
-  height: 60px;
-  background: #faff00;
+  width: 50px;
+  height: 50px;
+  background: crimson;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-          box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
 }
 
-label .hamburger {
+.nav .hamburger .line {
   position: absolute;
-  top: 30px;
-  left: 15px;
-  width: 30px;
-  height: 2px;
-  background: #000;
+  width: 26px;
+  height: 3px;
+  background: #fff;
   display: block;
+  border-radius: 3px;
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
+.nav .hamburger .l1 {
+  top: 14px;
+  left: 12px;
 }
 
-label .hamburger:before {
-  top: -10px;
+.nav .hamburger .l2 {
+  top: 24px;
+  left: 12px;
+  width: 18px;
 }
 
-label .hamburger:after {
-  bottom: -10px;
+.nav .hamburger .l3 {
+  top: 34px;
+  left: 12px;
 }
 
-label input {
+.nav .hamburger:hover .l2 {
+  width: 26px;
+}
+
+.nav .hamburger.open .l1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 24px;
+}
+
+.nav .hamburger.open .l2 {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  top: 24px;
+  width: 26px;
+  opacity: 0;
+}
+
+.nav .hamburger.open .l3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 24px;
+}
+
+.nav .nav-links {
+  position: fixed;
+  position: fixed;
+  left: 15px;
+  top: 80px;
+  height: 200px;
+  padding: 10px 15px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   display: none;
 }
 
-label input:checked + .menu {
-  -webkit-box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-          box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-  border-radius: 0;
-  position: fixed;
-  width: 60px;
-  height: 60px;
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-}
-
-label input:checked + .menu + ul {
-  opacity: 1;
-  position: fixed;
-}
-
-label ul {
-  z-index: 200;
+.nav .nav-links::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
   position: absolute;
-  top: 50%;
+  top: -5px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: 0.5s 0s ease-in-out;
-  transition: 0.5s 0s ease-in-out;
-  list-style: none;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
 }
 
-label a {
-  margin-bottom: 1em;
-  display: block;
+.nav .nav-links a {
+  width: 100%;
   color: #000;
-  font-size: 30px;
+  font-size: 16px;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-animation: text-reveal 0.5s ease-in;
+          animation: text-reveal 0.5s ease-in;
 }
 
-label a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.nav .nav-links a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: crimson;
+}
+
+.nav .nav-links.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes text-reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .landing {
@@ -165,12 +219,30 @@ label a:hover {
 
 .landing p {
   font-size: 22px;
-  color: #fff;
+  color: #101010;
   letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
 }
 
-.landing p:nth-child(2) {
+.landing .btn {
+  margin-top: 60px;
+}
+
+.landing .btn a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid crimson;
+}
+
+.landing .btn a:hover {
+  background: crimson;
+  color: #fff;
 }
 
 .landing #name {
@@ -182,85 +254,85 @@ label a:hover {
 .landing #name path:nth-child(1) {
   stroke-dasharray: 281px;
   stroke-dashoffset: 281px;
-  -webkit-animation: line-anime 2s ease forwards;
-          animation: line-anime 2s ease forwards;
+  -webkit-animation: line-anime 1.5s ease forwards;
+          animation: line-anime 1.5s ease forwards;
 }
 
 .landing #name path:nth-child(2) {
   stroke-dasharray: 307px;
   stroke-dashoffset: 307px;
-  -webkit-animation: line-anime 2s ease forwards 0.2s;
-          animation: line-anime 2s ease forwards 0.2s;
+  -webkit-animation: line-anime 1.5s ease forwards 0.2s;
+          animation: line-anime 1.5s ease forwards 0.2s;
 }
 
 .landing #name path:nth-child(3) {
   stroke-dasharray: 330px;
   stroke-dashoffset: 330px;
-  -webkit-animation: line-anime 2s ease forwards 0.4s;
-          animation: line-anime 2s ease forwards 0.4s;
+  -webkit-animation: line-anime 1.5s ease forwards 0.4s;
+          animation: line-anime 1.5s ease forwards 0.4s;
 }
 
 .landing #name path:nth-child(4) {
   stroke-dasharray: 298px;
   stroke-dashoffset: 298px;
-  -webkit-animation: line-anime 2s ease forwards 0.6s;
-          animation: line-anime 2s ease forwards 0.6s;
+  -webkit-animation: line-anime 1.5s ease forwards 0.6s;
+          animation: line-anime 1.5s ease forwards 0.6s;
 }
 
 .landing #name path:nth-child(5) {
   stroke-dasharray: 126px;
   stroke-dashoffset: 126px;
-  -webkit-animation: line-anime 2s ease forwards 0.8s;
-          animation: line-anime 2s ease forwards 0.8s;
+  -webkit-animation: line-anime 1.5s ease forwards 0.8s;
+          animation: line-anime 1.5s ease forwards 0.8s;
 }
 
 .landing #name path:nth-child(6) {
   stroke-dasharray: 396px;
   stroke-dashoffset: 396px;
-  -webkit-animation: line-anime 2s ease forwards 1s;
-          animation: line-anime 2s ease forwards 1s;
+  -webkit-animation: line-anime 1.5s ease forwards 1s;
+          animation: line-anime 1.5s ease forwards 1s;
 }
 
 .landing #name path:nth-child(7) {
   stroke-dasharray: 281px;
   stroke-dashoffset: 281px;
-  -webkit-animation: line-anime 2s ease forwards 1.2s;
-          animation: line-anime 2s ease forwards 1.2s;
+  -webkit-animation: line-anime 1.5s ease forwards 1.2s;
+          animation: line-anime 1.5s ease forwards 1.2s;
 }
 
 .landing #name path:nth-child(8) {
   stroke-dasharray: 298px;
   stroke-dashoffset: 298px;
-  -webkit-animation: line-anime 2s ease forwards 1.4s;
-          animation: line-anime 2s ease forwards 1.4s;
+  -webkit-animation: line-anime 1.5s ease forwards 1.4s;
+          animation: line-anime 1.5s ease forwards 1.4s;
 }
 
 .landing #name path:nth-child(9) {
   stroke-dasharray: 217px;
   stroke-dashoffset: 217px;
-  -webkit-animation: line-anime 2s ease forwards 1.6s;
-          animation: line-anime 2s ease forwards 1.6s;
+  -webkit-animation: line-anime 1.5s ease forwards 1.6s;
+          animation: line-anime 1.5s ease forwards 1.6s;
 }
 
 .landing #name path:nth-child(10) {
   stroke-dasharray: 217px;
   stroke-dashoffset: 217px;
-  -webkit-animation: line-anime 2s ease forwards 1.8s;
-          animation: line-anime 2s ease forwards 1.8s;
+  -webkit-animation: line-anime 1.5s ease forwards 1.8s;
+          animation: line-anime 1.5s ease forwards 1.8s;
 }
 
 .landing #name path:nth-child(11) {
   stroke-dasharray: 315px;
   stroke-dashoffset: 315px;
-  -webkit-animation: line-anime 2s ease forwards 2s;
-          animation: line-anime 2s ease forwards 2s;
+  -webkit-animation: line-anime 1.5s ease forwards 1.5s;
+          animation: line-anime 1.5s ease forwards 1.5s;
 }
 
 .landing #name path:nth-child(12) {
   stroke-dasharray: 348px;
   stroke-dashoffset: 348px;
-  -webkit-animation: line-anime 2s ease forwards 2.2s;
-          animation: line-anime 2s ease forwards 2.2s;
+  -webkit-animation: line-anime 1.5s ease forwards 2.2s;
+          animation: line-anime 1.5s ease forwards 2.2s;
 }
 
 @-webkit-keyframes line-anime {
@@ -280,7 +352,7 @@ label a:hover {
     fill: transparent;
   }
   to {
-    fill: #faff00;
+    fill: crimson;
   }
 }
 
@@ -289,7 +361,7 @@ label a:hover {
     fill: transparent;
   }
   to {
-    fill: #faff00;
+    fill: crimson;
   }
 }
 
@@ -317,8 +389,8 @@ label a:hover {
   width: 200px;
   height: 200px;
   position: fixed;
-  opacity: 0.05;
-  border: 2px solid #faff00;
+  opacity: 0.1;
+  border: 2px solid crimson;
   background-color: transparent;
 }
 
@@ -354,7 +426,7 @@ label a:hover {
 
 .section-heading h1 {
   font-size: 64px;
-  color: #fff;
+  color: crimson;
   letter-spacing: 4px;
 }
 
@@ -362,7 +434,7 @@ label a:hover {
   margin-top: 10px;
   font-style: italic;
   font-size: 20px;
-  color: rgba(230, 241, 255, 0.3);
+  color: #101010;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
@@ -409,7 +481,7 @@ label a:hover {
 
 #about .content .text {
   width: 80%;
-  color: rgba(230, 241, 255, 0.3);
+  color: #101010;
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 2;
@@ -425,19 +497,19 @@ label a:hover {
 
 #about .content .btn a {
   text-decoration: none;
-  color: #fff;
+  color: crimson;
   font-size: 18px;
   letter-spacing: 2px;
   padding: 10px;
   font-family: "Poppins", sans-serif;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border: 1px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid crimson;
 }
 
 #about .content .btn a:hover {
-  border: 1px solid #faff00;
-  color: #faff00;
+  background: crimson;
+  color: #fff;
 }
 
 @media screen and (max-width: 425px) {
@@ -474,7 +546,7 @@ label a:hover {
 #skills .content .skills {
   list-style: none;
   font-size: 20px;
-  color: rgba(230, 241, 255, 0.3);
+  color: #101010;
 }
 
 #skills .content .skills li {
@@ -520,11 +592,11 @@ label a:hover {
 }
 
 #skills .content .skills li #git {
-  color: white;
+  color: black;
 }
 
 #skills .content .skills li #gem {
-  color: white;
+  color: gray;
 }
 
 #skills #em-text {
@@ -558,13 +630,16 @@ label a:hover {
 
 #project .container .card {
   width: 600px;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   margin: 20px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+#project .container .card:hover {
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 #project .container .card .imgBox {
@@ -576,7 +651,7 @@ label a:hover {
 }
 
 #project .container .card .details {
-  color: #fff;
+  color: crimson;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,12 +664,14 @@ label a:hover {
 }
 
 #project .container .card .details p {
+  color: crimson;
   font-size: 24px;
   letter-spacing: 2px;
   font-style: normal;
 }
 
 #project .container .card .details p:nth-of-type(2) {
+  color: #101010;
   margin-top: 10px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -617,7 +694,7 @@ label a:hover {
 #project .container .card .details ul li a {
   font-size: 24px;
   margin: 0 10px;
-  color: #fff;
+  color: #101010;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -625,7 +702,7 @@ label a:hover {
 }
 
 #project .container .card .details ul li a:hover {
-  color: #faff00;
+  color: crimson;
 }
 
 #project .container .card:hover {
@@ -637,18 +714,18 @@ label a:hover {
   display: block;
   padding: 10px;
   margin-top: 20px;
-  border: 1px solid #fff;
+  border: 1px solid crimson;
   text-decoration: none;
-  color: #fff;
+  color: crimson;
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #project .btn:hover {
-  color: #faff00;
-  border: 1px solid #faff00;
+  color: #fff;
+  background: crimson;
 }
 
 @media screen and (max-width: 625px) {
@@ -746,7 +823,7 @@ label a:hover {
 }
 
 #contact .container ul li i:hover {
-  color: #faff00;
+  color: crimson;
 }
 
 @media screen and (max-width: 425px) {
@@ -789,11 +866,11 @@ footer .text {
 }
 
 footer .text span {
-  color: #faff00;
+  color: crimson;
 }
 
 footer .copy {
-  color: rgba(230, 241, 255, 0.3);
+  color: #101010;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
