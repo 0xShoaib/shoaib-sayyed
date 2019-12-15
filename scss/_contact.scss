@@ -8,11 +8,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .container {
     p {
       margin-top: 50px;
       font-size: 24px;
-      color: $secondary-color;
+      color: $text-color;
       letter-spacing: 3px;
     }
     ul {

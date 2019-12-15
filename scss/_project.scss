@@ -18,6 +18,8 @@
       width: 600px;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 
+      background-color: #fff;
+
       z-index: 1;
 
       margin: 20px;
@@ -43,6 +45,8 @@
         align-items: center;
 
         margin: 20px 10px;
+
+        background-color: #fff;
 
         p {
           color: $primary-color;

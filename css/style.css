@@ -26,13 +26,6 @@ body {
   background: #fff;
 }
 
-.logo {
-  position: fixed;
-  top: 15px;
-  left: 34px;
-  z-index: 100;
-}
-
 .nav {
   position: relative;
   z-index: 999;
@@ -670,6 +663,7 @@ body {
   width: 600px;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
   z-index: 1;
   margin: 20px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -700,6 +694,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px 10px;
+  background-color: #fff;
 }
 
 #project .container .card .details p {
@@ -812,7 +807,7 @@ body {
 #contact .container p {
   margin-top: 50px;
   font-size: 24px;
-  color: #fff;
+  color: #101010;
   letter-spacing: 3px;
 }
 
