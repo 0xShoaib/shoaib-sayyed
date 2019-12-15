@@ -1,7 +1,7 @@
 @import "./variable";
 
 .nav {
-  position: relative;
+  position: fixed;
   z-index: 999;
   .hamburger {
     position: fixed;

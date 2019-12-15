@@ -27,7 +27,7 @@ body {
 }
 
 .nav {
-  position: relative;
+  position: fixed;
   z-index: 999;
 }
 
@@ -383,7 +383,7 @@ body {
 .square {
   width: 200px;
   height: 200px;
-  z-index: -999;
+  z-index: -10;
   position: fixed;
   opacity: 0.1;
   border: 2px solid crimson;
@@ -482,6 +482,7 @@ body {
 
 #about .content .img {
   width: 40%;
+  z-index: -11;
 }
 
 #about .content .img img {
