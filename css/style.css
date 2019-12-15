@@ -881,11 +881,6 @@ footer .text span {
   color: crimson;
 }
 
-footer .copy {
-  color: #101010;
-  margin-bottom: 20px;
-}
-
 @media screen and (max-width: 320px) {
   footer .text {
     font-size: 18px;
