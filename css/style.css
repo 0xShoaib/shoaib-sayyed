@@ -870,14 +870,14 @@ footer {
           flex-direction: column;
 }
 
-footer .text {
+footer p {
   margin-bottom: 10px;
   font-size: 18px;
   letter-spacing: 2px;
   color: #101010;
 }
 
-footer .text span {
+footer p span {
   color: crimson;
 }
 
