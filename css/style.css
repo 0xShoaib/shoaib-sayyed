@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  outline: none;
 }
 
 .nav .hamburger .line {
@@ -388,6 +390,7 @@ body {
 .square {
   width: 200px;
   height: 200px;
+  z-index: -999;
   position: fixed;
   opacity: 0.1;
   border: 2px solid crimson;
@@ -440,6 +443,12 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .top {
+    right: -150px;
+  }
+  .bottom {
+    left: -150px;
+  }
   .section-heading h1 {
     font-size: 40px;
   }
@@ -472,15 +481,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
   margin-top: 10px;
 }
 
+#about .content .img {
+  width: 40%;
+}
+
+#about .content .img img {
+  width: 100%;
+}
+
 #about .content .text {
-  width: 80%;
+  width: 50%;
   color: #101010;
   font-size: 18px;
   letter-spacing: 2px;
@@ -492,7 +508,7 @@ body {
 }
 
 #about .content .btn {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #about .content .btn a {
@@ -510,6 +526,28 @@ body {
 #about .content .btn a:hover {
   background: crimson;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  #about .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #about .content .img {
+    width: 60%;
+  }
+  #about .content .img img {
+    width: 100%;
+  }
+  #about .content .text {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -632,6 +670,7 @@ body {
   width: 600px;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1;
   margin: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -660,7 +699,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 #project .container .card .details p {
@@ -730,30 +769,6 @@ body {
 
 @media screen and (max-width: 625px) {
   #project .container .card {
-    width: 400px;
-  }
-  #project .container .card .details p {
-    font-size: 18px;
-  }
-  #project .container .card .details ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #project .container .card .details ul li a {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  #project .container .card {
     width: 300px;
   }
   #project .container .card .details p {
@@ -816,7 +831,7 @@ body {
 }
 
 #contact .container ul li i {
-  color: #fff;
+  color: #101010;
   font-size: 40px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -860,9 +875,9 @@ footer {
 
 footer .text {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
-  color: #fff;
+  color: #101010;
 }
 
 footer .text span {
@@ -871,7 +886,6 @@ footer .text span {
 
 footer .copy {
   color: #101010;
-  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 

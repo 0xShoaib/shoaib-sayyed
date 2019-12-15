@@ -11,6 +11,7 @@
 //Html
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 // Body
@@ -32,6 +33,8 @@ body {
 .square {
   width: 200px;
   height: 200px;
+
+  z-index: -999;
 
   position: fixed;
   opacity: 0.1;
@@ -74,6 +77,12 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
+  .top {
+    right: -150px;
+  }
+  .bottom {
+    left: -150px;
+  }
   .section-heading {
     h1 {
       font-size: 40px;
@@ -105,9 +114,9 @@ footer {
   .text {
     margin-bottom: 10px;
 
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
-    color: $secondary-color;
+    color: $text-color;
 
     span {
       color: $primary-color;
@@ -115,7 +124,6 @@ footer {
   }
   .copy {
     color: $text-color;
-    letter-spacing: 2px;
     margin-bottom: 20px;
   }
 }

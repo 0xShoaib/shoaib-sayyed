@@ -13,12 +13,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 90%;
 
     margin-top: 10px;
 
+    .img {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+    }
+
     .text {
-      width: 80%;
+      width: 50%;
       color: $text-color;
       font-size: 18px;
       letter-spacing: 2px;
@@ -30,7 +40,7 @@
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 40px;
       a {
         text-decoration: none;
         color: $primary-color;
@@ -46,6 +56,25 @@
           background: $primary-color;
           color: #fff;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #about {
+    height: auto;
+    margin-bottom: 100px;
+    .content {
+      flex-direction: column-reverse;
+      .img {
+        width: 60%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        width: 100%;
       }
     }
   }
