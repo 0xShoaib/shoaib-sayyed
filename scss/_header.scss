@@ -202,18 +202,3 @@
     opacity: 1;
   }
 }
-
-@media screen and (max-width: 425px) {
-  .nav-links {
-    a {
-      span {
-        display: none;
-      }
-      &:hover {
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-}
