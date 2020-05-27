@@ -1,0 +1,51 @@
+@import "./variable";
+
+#blogs {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .blog-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+
+    .blog {
+      margin: 25px 0;
+      text-align: left;
+
+      padding: 0 6px;
+
+      .title {
+        text-decoration: none;
+        text-align: center;
+        color: $text-color;
+
+        h1 {
+          font-weight: normal;
+          letter-spacing: 1.2px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+      p {
+        color: grey;
+        font-weight: 200;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}

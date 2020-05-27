@@ -1,0 +1,134 @@
+@import "./variable";
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-top: 50px;
+
+  .title {
+    color: $primary-color;
+    padding: 0 20%;
+  }
+
+  .stats {
+    color: grey;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0 20%;
+  }
+  p,
+  ol,
+  ul {
+    padding: 0 20%;
+  }
+  p,
+  ol li,
+  ul li {
+    font-family: "Poppins", sans-serif;
+    color: $text-color;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin: 10px 0;
+  }
+  ol li {
+    margin: 0;
+    margin-left: 30px;
+  }
+  ul li {
+    list-style: none;
+  }
+  p {
+    code {
+      background-color: #eee;
+      padding: 5px 10px;
+      color: $primary-color;
+    }
+    a {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+  .img-container {
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.post-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  p {
+    margin: 10px 0;
+    a {
+      color: $text-color;
+      font-size: 16px;
+      letter-spacing: 1.4px;
+
+      font-family: "Montserrat", sans-serif;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.back-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+
+  text-decoration: none;
+  color: $secondary-color;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background: transparent;
+
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title,
+  .stats,
+  p,
+  ol {
+    padding: 0 5% !important;
+  }
+  .img-container {
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .img-container {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img-container {
+    width: 320px;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Styling In React</title>
+
+    <!-- Stylesheet  -------------------------------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="post-container">
+      <h1 class="title">Styling in React</h1>
+      <p class="stats">May 5 | 2 min read</p>
+
+      <p>
+        Hi Dev 👋, Thanks for opening my blog. I hope you are doing well and
+        ready to learn about <strong>Styling in React</strong> 😎.
+      </p>
+
+      <p>We can add styling to <b>React Component</b> in 4 ways:</p>
+
+      <ol>
+        <li>Inline Styling</li>
+        <li>CSS-in-JS Libraries</li>
+        <li>CSS &amp; CSS Pre-processors</li>
+        <li>CSS Module</li>
+      </ol>
+
+      <p>So, let's start!!</p>
+
+      <p><b>1. Inline Styling</b></p>
+
+      <p>
+        Inline styles are nothing new, they're a HTML feature that we've all
+        most likely used at some point. However implbenting inline styles in
+        React are little different, we store the CSS in object as key/value
+        pair.
+      </p>
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-1.png" />
+      </div>
+      <p>
+        Inline style are mostly used when applying conditional styles, they are
+        often not the best choice when more than one elbent requires same
+        styling.
+      </p>
+
+      <p><b>2. CSS-in-JS Libraries</b></p>
+
+      <p>
+        CSS-in-JS and inline styles are extrbely similar. However, with inline
+        styles React attaches the styles to the DOM nodes, whereas CSS-in-JS
+        libraries take your styles and inject thb into a
+        <code>&lt;style&gt;</code> tag in the DOM.
+      </p>
+
+      <p>First you need to install CSS-in-JS Library i.e styled-components</p>
+
+      <p><code>npm install --save styled-components</code></p>
+
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-2.png" />
+      </div>
+
+      <p>
+        You can also declare the styles in separate file and then imported in.
+      </p>
+
+      <p><b>3. CSS &amp; CSS Pre-processors</b></p>
+
+      <p>
+        The process of using vanilla CSS or CSS pre-processors is the same in
+        React, there are couple of notable differences. When applying classes to
+        elbents, we use the <strong>className</strong> syntax rather than
+        <strong>class</strong>. We also link our stylesheet using
+        <code>@import</code> syntax.
+      </p>
+
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-3.png" />
+      </div>
+
+      <p>
+        Define the styles for <code>.title</code> class in
+        <code>App.css</code> file. We can use one global
+        <code>CSS/Sass</code> file or we can split our stylesheet up into
+        components.
+      </p>
+
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-4.png" />
+      </div>
+
+      <p><b>4. CSS Module</b></p>
+
+      <p>
+        CSS Module are simply <code>.css</code> files in which all the CSS
+        styles and animations are defined. With an exception, all of the styles
+        declared are locally scoped to the Component they are imported into.
+      </p>
+
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-5.png" />
+      </div>
+
+      <p>
+        Refer to each CSS style using <code>.</code> notation. Define the styles
+        for <code>.title</code> class in <code>title.css</code>. All CSS styles
+        for one component are declared in one file
+      </p>
+
+      <div class="img-container">
+        <img src="./img/styling-in-react/code-6.png" />
+      </div>
+
+      <p>That's It 😎.</p>
+
+      <p>
+        Thanks for reading! My name is Shoaib Sayyed; I love helping people to
+        learn new skills 😊. You can follow me on
+        <a href="https://twitter.com/shoaib0311">Twitter</a> if you’d like to be
+        notified about new articles and resources.
+      </p>
+    </div>
+    <div class="post-btn">
+      <p>
+        <a href="./9-tricks-to-write-less-js.html"
+          >Next - 9 Tricks To Write Less JavaScript</a
+        >
+      </p>
+    </div>
+    <a class="back-btn" href="/">
+      Back to Portfolio
+    </a>
+  </body>
+</html>
