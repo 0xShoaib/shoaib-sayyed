@@ -112,6 +112,7 @@ nav ul li a:hover {
     z-index: -1;
     background: #101010;
     opacity: 0;
+    display: none;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
@@ -143,6 +144,7 @@ nav ul li a:hover {
     letter-spacing: 1.2px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    display: none;
   }
   .nav-btn {
     position: absolute;
@@ -158,7 +160,7 @@ nav ul li a:hover {
     background: #101010;
   }
   .nav-btn i:nth-child(1) {
-    margin-top: 4px;
+    margin-top: 2px;
   }
   .nav-btn i:nth-child(2) {
     margin-top: 7px;
@@ -192,10 +194,12 @@ nav ul li a:hover {
 #nav-input:checked ~ .nav-wrapper {
   z-index: 9990;
   opacity: 1;
+  display: block;
 }
 
 #nav-input:checked ~ .nav-wrapper ul li a {
   opacity: 1;
+  display: block;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }

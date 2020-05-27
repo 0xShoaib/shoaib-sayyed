@@ -88,6 +88,7 @@ nav ul {
     z-index: -1;
     background: $text-color;
     opacity: 0;
+    display: none;
 
     transition: all 0.2s ease-in-out;
 
@@ -117,6 +118,7 @@ nav ul {
           font-size: 18px;
           letter-spacing: 1.2px;
           transition: all 0.2s ease;
+          display: none;
         }
       }
     }
@@ -135,7 +137,7 @@ nav ul {
       background: $text-color;
 
       &:nth-child(1) {
-        margin-top: 4px;
+        margin-top: 2px;
       }
 
       &:nth-child(2) {
@@ -167,10 +169,12 @@ nav ul {
 #nav-input:checked ~ .nav-wrapper {
   z-index: 9990;
   opacity: 1;
+  display: block;
 }
 
 #nav-input:checked ~ .nav-wrapper ul li a {
   opacity: 1;
+  display: block;
   transform: translateX(0);
 }
 
