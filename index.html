@@ -26,12 +26,50 @@
     <!-- Stylesheet  -------------------------------------------------->
     <link rel="stylesheet" href="css/style.css" />
 
-    <script data-ad-client="ca-pub-1897330134111138" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
-    
+    <script
+      data-ad-client="ca-pub-1897330134111138"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
   <body>
+    <div
+      id="info"
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 10px;
+        background-color: #101010;
+        color: #fff;
+        text-align: center;
+        z-index: 1000;
+      "
+    >
+      <p>
+        Hey👋 check out my brand new portfolio
+        <a
+          href="https://shoaibsayyed.tech/"
+          target="_blank"
+          style="text-decoration: none; color: red"
+          >here.</a
+        >
+        Thank you for visiting ❤️
+        <span
+          style="
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+            background-color: white;
+            padding: 6px;
+            border-radius: 6px;
+          "
+          onclick="closemodal()"
+          >✖️</span
+        >
+      </p>
+    </div>
+
     <!-- Menu  -------------------------------------------------->
     <nav id="nav">
       <input type="checkbox" id="nav-input" class="hidden" />
@@ -308,9 +346,7 @@
         <p>lets connect...</p>
       </div>
       <div class="container">
-        <p>
-          sayyedshoaib57@gmail.com
-        </p>
+        <p>sayyedshoaib57@gmail.com</p>
         <ul>
           <li>
             <a href="https://github.com/shoaib-03/" target="_blank"
@@ -342,5 +378,11 @@
     <div class="footer">
       <p>Made with <i class="fas fa-heart"></i> <span>Shoaib Sayyed</span></p>
     </div>
+
+    <script type="text/javascript">
+      function closemodal() {
+        document.getElementById("info").style.display = "none";
+      }
+    </script>
   </body>
 </html>
